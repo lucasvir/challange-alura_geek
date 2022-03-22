@@ -20,10 +20,80 @@
     />
 
     <link rel="stylesheet" href="src/base/base.css" />
-    <link rel="stylesheet" href="src/components/css/style.css" />
+    <link rel="stylesheet" href="src/base/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="container p-3">
+        <div class="row">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="header__logo col-7 d-flex align-items-center mb-lg-0 text-decoration-none"
+            >
+              <img src="./src/img/logo.svg" alt="Logo da AluraGeek" />
+            </a>
+
+            <div class="header__lupa col-2 order-3 align-content-center">
+              <a href="#">
+                <img
+                  src="src/img/icons/lupa.svg"
+                  alt="Icone de Lupa referente a fazer uma busca"
+                />
+              </a>
+            </div>
+
+            <form
+              id="header__busca--hide"
+              class="col-7 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+            >
+              <input
+                type="search"
+                class="form-control form-control-dark"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </form>
+
+            <div class="text-end col-6">
+              <button
+                type="button"
+                id="header__botao"
+                class="btn rounded-0 me-2"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container d-flex p-0">
+        <div class="container hero__banner col-xxl-8 px-0 py-0">
+          <div
+            class="row text-white m-0 mt-3"
+          >
+            <div class="px-3 mt-5">
+              <h1 class="hero__texto lh-1 mb-3">
+                Dezembro promocional
+              </h1>
+              <p class="lead hero__texto--secundario">
+                Produtos selecionados com 33% de desconto
+              </p>
+              <div class="hero__botao">
+                <button
+                  type="button"
+                  class="btn hero__botao--texto border-0"
+                >
+                  Ver Consoles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
     <script
