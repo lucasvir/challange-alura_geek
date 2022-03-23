@@ -20,3 +20,13 @@
   width: 119px;
   height: 40px;
 }
+
+#footer__form-botao {
+  width: 151px;
+  height: 40px;
+  color: white;
+  background-color: var(--cor-azul);
+  font-size: 14px;
+  line-height: 16.44px;
+  font-weight: 600;
+}

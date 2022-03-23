@@ -24,18 +24,30 @@
   </head>
   <body>
     <header>
-      <div class="container p-3">
-        <div class="row">
+      <div class="container p-3 px-md-0">
+        <div class="row mx-md-0">
           <div
-            class="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start"
+            class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between justify-content-lg-start p-md-0"
           >
-            <a
-              href="/"
-              class="header__logo col-7 d-flex align-items-center mb-lg-0 text-decoration-none"
-            >
-              <img src="./src/img/logo.svg" alt="Logo da AluraGeek" />
-            </a>
-
+            <section class="d-flex justify-content-between align-items-center">
+              <a
+                href="/"
+                class="header__logo d-flex align-items-center mb-lg-0 text-decoration-none"
+              >
+                <img src="./src/img/logo.svg" alt="Logo da AluraGeek" />
+              </a>
+              <form
+                id="header__busca--hide"
+                class="ms-5"
+              >
+                <input
+                  type="search"
+                  class="form-control form-control-dark header__busca--input"
+                  placeholder="O que deseja encontrar?"
+                  aria-label="Search"
+                />
+              </form>
+            </section>
             <div class="header__lupa col-2 order-3 align-content-center">
               <a href="#">
                 <img
@@ -45,23 +57,11 @@
               </a>
             </div>
 
-            <form
-              id="header__busca--hide"
-              class="col-7 col-lg-auto mb-3 mb-lg-0 me-lg-3"
-            >
-              <input
-                type="search"
-                class="form-control form-control-dark"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-            </form>
-
-            <div class="text-end col-6">
+            <div class="text-end">
               <button
                 type="button"
                 id="header__botao"
-                class="btn rounded-0 me-2"
+                class="btn rounded-0 me-2 me-md-0"
               >
                 Login
               </button>
@@ -69,10 +69,10 @@
           </div>
         </div>
       </div>
-      <section class="container d-flex p-0">
-        <div class="container hero__banner col-xxl-8 px-0 py-0">
-          <div class="row text-white m-0 mt-3">
-            <div class="px-3 mt-5">
+      <section class="container-fluid d-flex p-0">
+        <div class="container-fluid hero__banner d-flex col-xxl-8 px-0 py-0">
+          <div class="row text-white m-0 align-content-end">
+            <div class="p-3 p-md-5">
               <h1 class="hero__texto lh-1 mb-3">Dezembro promocional</h1>
               <p class="lead hero__texto--secundario">
                 Produtos selecionados com 33% de desconto
@@ -90,9 +90,9 @@
 
     <!-- MAIN -->
     <main>
-      <section class="produtos__starwars p-3 pt-0 border-bottom">
+      <section class="produtos__starwars p-3 pb-5 pt-0 px-md-0 pb-md-5 border-bottom">
         <header
-          class="p-0 d-flex justify-content-between align-items-center mt-3 mb-3"
+          class="container p-0 d-flex justify-content-between align-items-center mt-3 mb-3"
         >
           <h3 class="produtos__header--titulo m-0">Star Wars</h3>
           <a href="#" class="produtos__header--preco d-flex"
@@ -158,9 +158,9 @@
           </div>
         </div>
       </section>
-      <section class="produtos__console p-3 border-bottom">
+      <section class="produtos__console p-3 pb-5 px-md-0 pb-md-5 border-bottom">
         <header
-          class="p-0 d-flex justify-content-between align-items-center mt-3 mb-3"
+          class="container p-0 d-flex justify-content-between align-items-center mb-3"
         >
           <h3 class="produtos__header--titulo m-0">Consoles</h3>
           <a href="#" class="produtos__header--preco d-flex"
@@ -226,11 +226,11 @@
           </div>
         </div>
       </section>
-      <section class="produtos__diversos p-3">
+      <section class="produtos__diversos p-3 pb-5 mb-md-5">
         <header
-          class="p-0 d-flex justify-content-between align-items-center mt-3 mb-3"
+          class="container p-0 mb-3 d-flex justify-content-between align-items-center"
         >
-          <h3 class="produtos__header--titulo m-0">Consoles</h3>
+          <h3 class="produtos__header--titulo m-0">Diversos</h3>
           <a href="#" class="produtos__header--preco d-flex"
             >Ver tudo
             <span
@@ -296,12 +296,12 @@
       </section>
     </main>
     <footer>
-      <div class="container mt-3 p-0 px-3">
+      <div class="container-fluid mt-3 p-0 px-3 px-md-0">
         <div class="row footer__main pt-3">
           <section
-            class="col-sm-12 footer__card d-flex flex-wrap flex-column align-content-center p-0 px-3"
+            class="col-sm-12 col-md-4 footer__card d-flex flex-wrap flex-column align-content-center align-content-md-start p-0 px-3 px-md-5"
           >
-            <div>
+            <div class="mb-3">
               <a href="#">
                 <img
                   class="footer__card-logo"
@@ -310,7 +310,7 @@
                 />
               </a>
             </div>
-            <div class="footer__card-lista text-center">
+            <div class="footer__card-lista text-center text-md-start">
               <ul class="px-0">
                 <li class="footer__card-itens"><a href="#">Quem somos</a></li>
                 <li class="footer__card-itens">
@@ -327,7 +327,7 @@
               </ul>
             </div>
           </section>
-          <section class="footer__form px-3 mt-4">
+          <section class="col-md-8 footer__form px-3 mt-4 px-md-5 mt-md-3">
             <h4 class="footer__form-titulo">Fale conosco</h4>
             <div class="mb-3">
               <label for="nome" class="form-label">Nome</label>
@@ -347,10 +347,24 @@
                 placeholder="Deixe sua mensagem"
               ></textarea>
             </div>
-          </section>       
+            <div class="text-start mb-3">
+              <button
+                type="button"
+                id="footer__form-botao"
+                class="btn rounded-0 me-2 me-md-0"
+              >
+                Enviar mensagem
+              </button>
+            </div>
+          </section>
         </div>
-        <div class="footer__assin text-center d-flex justify-content-center mt-3 p-3">
-          <p class="align-self-center">Desenvolvido por Lucas Virmond <br> 2022</p>
+        <div
+          class="footer__assin text-center d-flex justify-content-center mt-3 p-3"
+        >
+          <p class="align-self-center">
+            Desenvolvido por Lucas Virmond <br />
+            2022
+          </p>
         </div>
       </div>
     </footer>
