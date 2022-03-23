@@ -51,6 +51,10 @@
   flex-shrink: 0;
 }
 
+.produtos__card--hide {
+  display: none;
+}
+
 .footer__card-logo {
   width: 176px;
   height: 50px;
@@ -99,6 +103,7 @@
     width: 100%;
   }
 
+
   .footer__main {
     margin-left: 0;
     margin-right: 0;
@@ -116,4 +121,14 @@
     background-size: cover;
   }
 
+}
+
+@media screen and (min-width: 1200px) {
+  .produtos__card--hide {
+    display: initial;
+  }
+
+  .footer__card-itens {
+    margin-bottom: 1.25rem;
+  }
 }
