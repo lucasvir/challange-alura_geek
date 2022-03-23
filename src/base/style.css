@@ -30,7 +30,6 @@
   height: 1rem;
 }
 
-
 .produtos__card {
   width: 156px;
   height: 249px;
@@ -41,4 +40,26 @@
   height: 174px;
   object-fit: cover;
   flex-shrink: 0;
+}
+
+.footer__card-logo {
+  width: 176px;
+  height: 50px;
+}
+
+.footer__form-nome {
+  width: 100%;
+  height: 56px;
+}
+
+.footer__form-mensagem {
+  resize: none;
+  width: 100%px;
+  height: 82px;
+}
+
+.footer__main {
+  background-color: var(--cor-azul_secundario);
+  margin-left: -16px;
+  margin-right: -16px;
 }
