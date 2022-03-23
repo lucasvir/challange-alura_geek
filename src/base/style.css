@@ -20,15 +20,25 @@
   height: 192px;
 }
 
-.hero__texto {
-  color: white;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 25.83px;
+#produtos__card--row {
+  grid-gap: 1.5rem;
 }
 
-.hero__texto--secundario {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 16.44px;
+.produtos__header--preco_seta {
+  background: url(../img/icons/arrow.jpg) center no-repeat;
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.produtos__card {
+  width: 156px;
+  height: 249px;
+}
+
+.produtos__card--img {
+  width: 156px;
+  height: 174px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
