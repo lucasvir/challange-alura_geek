@@ -20,3 +20,26 @@
   width: 119px;
   height: 40px;
 }
+
+#footer__form-botao {
+  width: 151px;
+  height: 40px;
+  color: white;
+  background-color: var(--cor-azul);
+  font-size: 14px;
+  line-height: 16.44px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+
+  .hero__botao{
+    width: 130px;
+    height: 51px;
+  }
+
+  .hero__botao--texto {
+    width: 130px;
+    height: 51px;
+  }
+}
