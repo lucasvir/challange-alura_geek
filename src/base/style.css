@@ -73,8 +73,6 @@
   margin-right: -16px;
 }
 
-
-
 @media screen and (min-width: 767px) {
   .header__lupa {
     display: none;
@@ -105,4 +103,17 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+@media screen and (min-width: 992px) {
+  .header__logo {
+    width: 176px;
+    height: 50px;
+  }
+
+  .hero__banner {
+    background: url(../img/hero_full.jpg) center no-repeat;
+    background-size: cover;
+  }
+
 }

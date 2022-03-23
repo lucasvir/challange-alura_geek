@@ -30,3 +30,16 @@
   line-height: 16.44px;
   font-weight: 600;
 }
+
+@media screen and (min-width: 992px) {
+
+  .hero__botao{
+    width: 130px;
+    height: 51px;
+  }
+
+  .hero__botao--texto {
+    width: 130px;
+    height: 51px;
+  }
+}
