@@ -1,6 +1,7 @@
 @import url(../components/css/forms.css);
 @import url(../components/css/botoes.css);
 @import url(../components/css/textos.css);
+@import url(../base/produto.css);
 
 .header__logo {
   width: 100px;
