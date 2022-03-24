@@ -77,6 +77,12 @@
   margin-right: -16px;
 }
 
+/****** PAGINA DE LOGIN *****/
+
+.form__login {
+  background-color: #f5f5f5;
+}
+
 @media screen and (min-width: 767px) {
   .header__lupa {
     display: none;

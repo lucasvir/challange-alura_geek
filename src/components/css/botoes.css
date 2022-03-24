@@ -31,6 +31,18 @@
   font-weight: 600;
 }
 
+/***** PAGINA LOGIN *****/
+
+#form__login-botao {
+  width: 109px;
+  height: 40px;
+  color: white;
+  background-color: var(--cor-azul);
+  font-size: 14px;
+  line-height: 16.44px;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 992px) {
 
   .hero__botao{
