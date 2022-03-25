@@ -76,14 +76,14 @@
     <!-- MAIN -->
     <main>
       <section
-        class="container-fluid form__novoProduto d-flex flex-wrap justify-content-center"
+        class="container-fluid form__novoProduto d-flex flex-wrap justify-content-center px-md-5"
       >
-        <div class="container p-3 form__novoProduto--card my-4">
+        <div class="container p-3 form__novoProduto--card my-3">
           <h3 class="form__novoProduto-titulo mb-3 text-center">
             Adicionar novo produto
           </h3>
-          <div class="container d-flex flex-wrap justify-content-center">
-            <div class="d-flex justify-content-center">
+          <div class="container d-flex flex-wrap justify-content-center justify-content-md-around align-items-center my-5">
+            <div class="d-flex justify-content-center bg-white">
               <div 
                 id="form__novoProduto-add" 
                 class="d-flex flex-wrap btn btn-rounded justify-content-center"
@@ -93,6 +93,18 @@
                 <p>Adicionar imagem</p>
               </div>
             </div>
+            <div class="d-flex flex-wrap justify-content-between">
+              
+              <div class="text-end">
+                <button
+                  type="button"
+                  id="form__novoProduto-botao--hide"
+                  class="btn rounded-0 me-2 me-md-0 w-100"
+                >
+                  Procure no seu computador
+                </button>
+              </div>
+            </div>
           </div>
           <div class="mb-3 mt-3">
             <label for="nome" class="form-label">Nome do produto</label>
@@ -100,7 +112,7 @@
               type="text"
               class="form-control form__novoProduto--nome"
               id="nome"
-              placeholder="Digite seu nome de usuario"
+              placeholder="Digite o nome do produto"
             />
           </div>
           <div class="mb-3">
@@ -109,15 +121,14 @@
               type="text"
               class="form-control form__novoProduto--preco"
               id="preco"
-              placeholder="Digite seu nome de usuario"
+              placeholder="Digite o preço do produto"
             />
           </div>
-          <div class="mb-3 mt-3">
+          <div class="mb-3 mt-3 text-start">
             <textarea
               class="form-control form__novoProduto--mensagem"
               placeholder="Descrição do produto"
             >
-              Descrição do produto
             </textarea>
           </div>
           <div class="text-center">
@@ -136,7 +147,7 @@
     <footer>
       <div class="container-fluid p-0 px-3 px-md-0">
         <div class="footer__main">
-          <div class="container row p-3 pt-3 px-lg-5 m-auto pt-xl-5">
+          <div class="container row p-3 pt-3 px-md-0 px-lg-5 m-auto pt-xl-5">
             <section
               class="col-sm-12 col-md-4 col-xl-6 footer__card d-flex flex-wrap flex-column align-content-center align-content-md-start p-0 px-3 px-md-0 flex-xl-row justify-content-xl-start"
             >

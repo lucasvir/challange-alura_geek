@@ -1,8 +1,10 @@
 #header__botao {
   width: 133px;
   height: 40px;
+  max-width: 288px;
   color: var(--cor-azul);
   border-color: var(--cor-azul);
+
 }
 
 .hero__botao {
