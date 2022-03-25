@@ -19,6 +19,7 @@
   background-size: cover;
   width: 100%;
   height: 192px;
+  max-width: 1440px;
 }
 
 .header__busca--input {
