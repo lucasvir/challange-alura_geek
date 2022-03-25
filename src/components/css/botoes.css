@@ -7,6 +7,13 @@
 
 }
 
+#header__botao:hover {
+  color: var(--cor-azul);
+  border-color: var(cor-azul_hover);
+  font-weight: 500;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .hero__botao {
   border-radius: 0;
   background-color: var(--cor-azul);
@@ -31,6 +38,11 @@
   font-size: 14px;
   line-height: 16.44px;
   font-weight: 600;
+}
+
+#footer__form-botao:hover {
+  background-color: var(--cor-azul_hover);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /***** PAGINA LOGIN *****/

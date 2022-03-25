@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | AluraGeek</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/base/base.css" />
+    <link rel="stylesheet" href="src/base/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container p-3 px-md-0 px-lg-5">
+        <div class="row mx-md-0">
+          <div
+            class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between justify-content-lg-start p-md-0"
+          >
+            <section
+              class="col-lg-8 d-flex justify-content-between justify-content-lg-start align-items-center"
+            >
+              <a
+                href="/"
+                class="header__logo d-flex align-items-center mb-lg-0 text-decoration-none"
+              >
+                <img
+                  src="./src/img/logo.svg"
+                  alt="Logo da AluraGeek"
+                  class="header__logo"
+                />
+              </a>
+              <form id="header__busca--hide" class="ms-5 ms-lg-5">
+                <input
+                  type="search"
+                  class="form-control form-control-dark header__busca--input"
+                  placeholder="O que deseja encontrar?"
+                  aria-label="Search"
+                />
+              </form>
+            </section>
+            <div class="header__lupa col-2 order-3 align-content-center">
+              <a href="#">
+                <img
+                  src="src/img/icons/lupa.svg"
+                  alt="Icone de Lupa referente a fazer uma busca"
+                />
+              </a>
+            </div>
+
+            <div class="col-lg-4 text-end">
+              <button
+                type="button"
+                id="header__botao"
+                class="btn rounded-0 me-2 me-md-0"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section
+        class="container px-lg-5 produtos__todos p-3 pb-5 pt-0 px-md-0 pb-md-5"
+      >
+        <header
+          class="container p-0 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mt-3 mb-3"
+        >
+          <h3 class="produtos__header--titulo m-0 mb-3">Todos os produtos</h3>
+          <div class="text-start mb-3">
+            <button
+              type="button"
+              id="footer__form-botao"
+              class="btn rounded-0 me-2 me-md-0"
+            >
+              Adicionar produto
+            </button>
+          </div>
+        </header>
+        <div class="container p-0">
+          <div
+            id="produtos__card--row"
+            class="container p-0 row m-0 d-flex flex-wrap justify-content-between mb-3"
+          >
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/star_wars/produto-1.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/star_wars/produto-2.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/star_wars/produto-3.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5> 
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/star_wars/produto-4.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div
+              class="col-sm card produtos__card produtos__card--hide border-0 rounded-0 p-0"
+            >
+              <img
+                src="src/img/star_wars/produto-5.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div
+              class="col-sm card produtos__card produtos__card--hide border-0 rounded-0 p-0"
+            >
+              <img
+                src="src/img/star_wars/produto-6.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="produtos__card--row"
+            class="container p-0 row m-0 d-flex flex-wrap justify-content-between mb-3"
+          >
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/consoles/produto-1.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/consoles/produto-2.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/consoles/produto-3.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5> 
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/consoles/produto-4.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div
+              class="col-sm card produtos__card produtos__card--hide border-0 rounded-0 p-0"
+            >
+              <img
+                src="src/img/consoles/produto-5.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div
+              class="col-sm card produtos__card produtos__card--hide border-0 rounded-0 p-0"
+            >
+              <img
+                src="src/img/consoles/produto-6.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="produtos__card--row"
+            class="container p-0 row m-0 d-flex flex-wrap justify-content-between"
+          >
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/diversos/produto-1.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/diversos/produto-2.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/diversos/produto-3.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5> 
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div class="col-sm card produtos__card border-0 rounded-0 p-0">
+              <img
+                src="src/img/diversos/produto-4.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div
+              class="col-sm card produtos__card produtos__card--hide border-0 rounded-0 p-0"
+            >
+              <img
+                src="src/img/diversos/produto-5.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+            <div
+              class="col-sm card produtos__card produtos__card--hide border-0 rounded-0 p-0"
+            >
+              <img
+                src="src/img/diversos/produto-6.jpg"
+                class="img-fluid card-img-top produtos__card--img rounded-0"
+                alt="Imagem do produto em questão"
+              />
+              <a href="#"><span class="img__icon-delete"></span></a>
+              <a href="#"><span class="img__icons-edit"></span></a>
+              <div class="card-body ps-0">
+                <h5 class="produtos__card--titulo">Produto XYZ</h5>
+                <p class="produtos__card--texto mb-1">R$60,00</p>
+                <a href="#" class="produtos__card--link">Ver produto</a>
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid mt-3 p-0 px-3 px-md-0">
+        <div class="footer__main">
+          <div class="container row p-3 pt-3 px-lg-5 m-auto pt-xl-5">
+            <section
+              class="col-sm-12 col-md-4 col-xl-6 footer__card d-flex flex-wrap flex-column align-content-center align-content-md-start p-0 px-3 px-md-0 flex-xl-row justify-content-xl-start"
+            >
+              <div class="mb-3 me-xl-5">
+                <a href="#">
+                  <img
+                    class="footer__card-logo"
+                    src="src/img/logo.svg"
+                    alt="Logo do AluraGeek"
+                  />
+                </a>
+              </div>
+              <div
+                class="footer__card-lista text-center text-md-start ms-xl-5 mt-xl-3"
+              >
+                <ul class="px-0">
+                  <li class="footer__card-itens"><a href="#">Quem somos</a></li>
+                  <li class="footer__card-itens">
+                    <a href="#">Política de privacidade</a>
+                  </li>
+                  <li class="footer__card-itens">
+                    <a href="#">Programa fidelidade</a>
+                  </li>
+                  <li class="footer__card-itens">
+                    <a href="#">Nossas lojas</a>
+                  </li>
+                  <li class="footer__card-itens">
+                    <a href="#">Quero ser franqueado</a>
+                  </li>
+                  <li class="footer__card-itens">
+                    <a href="#">Anuncie aqui</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section
+              class="col-md-8 col-xl-6 footer__form px-3 mt-4 px-md-0 ps-md-5 mt-md-3 mt-xl-3 ps-xl-0"
+            >
+              <h4 class="footer__form-titulo">Fale conosco</h4>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control footer__form-nome border-0 border-bottom"
+                  id="nome"
+                  placeholder="Digite seu nome completo"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea
+                  type="text"
+                  class="form-control footer__form-mensagem border-0 border-bottom"
+                  id="mensagem"
+                  placeholder="Deixe sua mensagem"
+                ></textarea>
+              </div>
+              <div class="text-start mb-3">
+                <button
+                  type="button"
+                  id="footer__form-botao"
+                  class="btn rounded-0 me-2 me-md-0"
+                >
+                  Enviar mensagem
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div
+          class="footer__assin text-center d-flex justify-content-center mt-3 p-3"
+        >
+          <p class="align-self-center">
+            Desenvolvido por Lucas Virmond <br />
+            2022
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
