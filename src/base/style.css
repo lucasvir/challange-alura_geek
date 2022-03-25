@@ -177,7 +177,7 @@
   top: 3%;
 }
 
-
+/***** MEDIA's *****/
 
 @media screen and (min-width: 767px) {
   .header__lupa {
